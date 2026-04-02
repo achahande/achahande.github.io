@@ -96,35 +96,53 @@ section h2 {
   margin-top: 15px;
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
-.buttons a {
-  padding: 8px 14px;
-  border-radius: 6px;
-  text-decoration: none;
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 8px;
   font-size: 14px;
   font-weight: bold;
-
+  text-decoration: none;
   background: #38bdf8;
   color: #020617;
-
-  transition: 0.2s;
+  transition: all 0.2s ease;
 }
 
-.buttons a:hover {
+.btn:hover {
   background: #0ea5e9;
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background: transparent;
+  color: #38bdf8;
+  border: 1px solid #38bdf8;
+}
+
+.btn-outline:hover {
+  background: #38bdf8;
+  color: #020617;
 }
 
 /* Contact */
 #contact a {
-  color: #38bdf8;
+  color: inherit;
 }
 
 /* Footer */
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 25px 20px;
   background: #020617;
   border-top: 1px solid #1e293b;
   margin-top: 40px;
+}
+
+/* Footer spacing */
+footer .buttons {
+  justify-content: center;
+  margin-top: 15px;
 }
